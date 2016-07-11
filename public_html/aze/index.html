@@ -21,6 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<script src='https://www.google.com/recaptcha/api.js?hl=az'></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -193,8 +194,8 @@
 <br><br><br><br><br>
 <h1 style=background-color:black>Portret</h1>
 </div>
-<img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13312683_1796360387264561_211090459675409417_n.jpg?oh=5d8d807a903b9a96882af990f768333d&oe=57DC8574" 
-alt="Mountain View" style=width:100%>
+<a href=/aze/portrait.html><img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13312683_1796360387264561_211090459675409417_n.jpg?oh=5d8d807a903b9a96882af990f768333d&oe=57DC8574" 
+alt="Mountain View" style=width:100%></a>
 <br><br>
 <p>Portetl&#601;r &uuml;&ccedil;&uuml;n <a href=/aze/portrait.html>buraya</a> daxil olun.</p>
 
@@ -221,30 +222,36 @@ alt="Mountain View" style=width:100%>
 <br><br><br><br><br><br><br><br><br>
 <div id=vfx>
 <br><br><br><br><br>
- <h2 style="background-color:black;">VFX&Test &ccedil;&#601;k&#304;l&#304;&#351;l&#601;r&#304;</h2>
+<h2 style="background-color:black;">VFX&Test &ccedil;&#601;k&#304;l&#304;&#351;l&#601;r&#304;</h2>
 </div>
 <div class="col-lg-8 col-lg-offset-2">
 <p>VFX&amp;Test &ccedil;&#601;kili&#351;l&#601;ri m&uuml;&#601;yy&#601;n x&uuml;susi v&#601; vizual effektl&#601;rd&#601; n&#601; q&#601;d&#601;r yax&#351;&#305; oldu&#287;umuzu test etm&#601;k &uuml;&ccedil;&uuml;n d&uuml;z&#601;ltdiyimiz videolard&#305;r. H&#601;min videolarla <a href=/aze/extra.html#vfx>burada</a> tan&#305;&#351; ola bil&#601;rsiniz.</p>
 </div>
 
-
 <br><br><br><br><br><br><br><br><br>
 <div id=blooper>
 <br><br><br><br><br>
-                    <h2 style="background-color:black;">S&#601;hn&#601;-arxas&#305;</h2>
+<h2 style="background-color:black;">S&#601;hn&#601;-arxas&#305;</h2>
 </div>
-              <p>M&uuml;xt&#601;lif filml&#601;rimizd&#601;n olan s&#601;hn&#601;-arxas&#305; g&ouml;r&uuml;nt&uuml;l&#601;r il&#601; <a href=/aze/extra.html#blooper>buradan </a>tan&#305;&#351; olun.</p>
+<div class="col-lg-8 col-lg-offset-2">
+<p>M&uuml;xt&#601;lif filml&#601;rimizd&#601;n olan s&#601;hn&#601;-arxas&#305; g&ouml;r&uuml;nt&uuml;l&#601;r il&#601; <a href=/aze/extra.html#blooper>buradan </a>tan&#305;&#351; olun.</p>
+</div>
 
 <div id=clips>
 <br><br><br><br>
 <h1 style=background-color:black>S&#601;hn&#601;l&#601;r</h1>
 </div>
+<div class="col-lg-8 col-lg-offset-2">
 <p>Filml&#601;rimizd&#601;n olan m&uuml;xt&#601;lif q&#305;sa s&#601;hn&#601;l&#601;rl&#601; <a href=/aze/extra.html#clips>buradan </a>tan&#305;&#351; olun.</p>
+</div>
+
 <div id=ads>
 <br><br><br><br>
 <h2 style="background-color:black;" id="ads">Reklam &ccedil;arxlar&#305;</h2>
 </div>
+<div class="col-lg-8 col-lg-offset-2">
 <p>&#304;ndiy&#601; q&#601;d&#601;r &ccedil;&#601;kdiyimiz reklam &ccedil;arxlar&#305; il&#601; <a href="/aze/extra.html#ads">buradan </a>tan&#305;&#351; olun.</p>
+</div>
 <br><br><br><br>
 
         </div>
@@ -257,6 +264,16 @@ alt="Mountain View" style=width:100%>
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>B&#304;z&#304;ml&#601; &#601;laq&#601;</h2>
                 <p>Biziml&#601; &#601;laq&#601; saxlama&#287;a v&#601; sosial &#351;&#601;b&#601;k&#601;l&#601;rd&#601; izl&#601;m&#601;y&#601;  &ccedil;&#601;kinm&#601;yin!</p>
+
+<form method="post" action="mail.php">      
+  <input name="name" id="name" required oninvalid="this.setCustomValidity('Z&#601;hm&#601;t olmazsa bu xanan&#305; doldurun')" oninput="setCustomValidity('')" type="text" class="feedback-input" placeholder="Ad&#305;n&#305;z" />   
+  <input name="mail" id="mail" required oninvalid="this.setCustomValidity('Z&#601;hm&#601;t olmazsa bu xanan&#305; doldurun')" oninput="setCustomValidity('')" type="email" class="feedback-input" placeholder="Sizin email adresiniz" />
+  <input name="subject" id="subject" required oninvalid="this.setCustomValidity('Z&#601;hm&#601;t olmazsa bu xanan&#305; doldurun')" oninput="setCustomValidity('')" type="text" class="feedback-input" placeholder="M&ouml;vzu" />
+  <textarea name="message" id="message" class="feedback-input" placeholder="M&#601;tn"></textarea>
+  <div class="g-recaptcha" data-sitekey="6LePrCQTAAAAAMxCMCurKm2RtZisRvmCSRiMDdVM"></div>
+  <input name="submit" id="submit" type="submit" value="G&Ouml;ND&#399;R"/>
+</form>
+
                 <p><a href="mailto:contact@magicbrothers.eu">contact@magicbrothers.eu</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">

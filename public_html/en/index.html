@@ -14,10 +14,12 @@
 <link href=font-awesome/css/font-awesome.min.css rel=stylesheet type=text/css>
 <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel=stylesheet type=text/css>
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel=stylesheet type=text/css>
+<link href=css/main.css rel=stylesheet>
 <!--[if lt IE 9]>
 <script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
 <script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script>
 <![endif]-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body id=page-top data-spy=scroll data-target=.navbar-fixed-top>
 
@@ -180,12 +182,16 @@ alt="Mountain View" style=width:100%></a>
 <br><br><br><br><br>
 <h2 style=background-color:black>Bloopers</h2>
 </div>
+<div class="col-lg-8 col-lg-offset-2">
 <p>Bloopers are behind the scene footages from our various films. Have a look <a href=/en/extra.html#blooper>here</a>.</p>
+</div>
 <div id=clips>
 <br><br><br><br>
 <h1 style=background-color:black>Clips</h1>
 </div>
+<div class="col-lg-8 col-lg-offset-2">
 <p><a href=/en/extra.html#clips>Here</a> are some clips from our various films.</p>
+</div>
 <div id=ads>
 <br><br><br><br>
 <h2 style=background-color:black>Ads</h2>
@@ -201,6 +207,16 @@ alt="Mountain View" style=width:100%></a>
 <div class="col-lg-8 col-lg-offset-2">
 <h2>Contact Us</h2>
 <p>Feel free to contact us and follow us on social network!</p>
+
+<form method="post" action="mail.php">      
+  <input name="name" id="name" required="required" type="text" class="feedback-input" placeholder="Your name" />   
+  <input name="mail" id="mail" required="required" type="email" class="feedback-input" placeholder="Your email" />
+  <input name="subject" id="subject" required="required" type="text" class="feedback-input" placeholder="Subject" />
+  <textarea name="message" id="message" required="required" class="feedback-input" placeholder="Your message"></textarea>
+  <div class="g-recaptcha" data-sitekey="6LePrCQTAAAAAMxCMCurKm2RtZisRvmCSRiMDdVM"></div>
+  <input name="submit" id="submit" type="submit" value="SEND"/>
+</form>
+
 <p><a href=mailto:contact@magicbrothers.eu>contact@magicbrothers.eu</a>
 </p>
 <ul class="list-inline banner-social-buttons">
@@ -232,7 +248,7 @@ alt="Mountain View" style=width:100%></a>
 <script src=js/bootstrap.min.js></script>
 <script src=js/jquery.easing.min.js></script>
 <script src=js/grayscale.js></script>
-
+<script src=js/contact.js></script>
 
 </body>
 </html>
